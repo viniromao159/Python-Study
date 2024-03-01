@@ -1,0 +1,6 @@
+lista = ["Vinicius", "Vitor", "Cristina", "Vini", "Vi", "Cris"]
+
+
+for indice in range(7):
+    print(indice, lista[indice])
+    
