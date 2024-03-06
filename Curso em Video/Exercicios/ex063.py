@@ -1,3 +1,5 @@
+# leia um número N inteiro qualquer e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci. 
+
 n = int(input("Digite o valor para sequencia de fibonacci: "))
 fib = [0,1]
 
@@ -8,4 +10,7 @@ while cont < n:
     cont += 1
 
 for i in fib:
-    print(i, end=" ")
+    print(i, end=" -> ")
+    if i == fib[-1]:
+        print("FIM")
+    

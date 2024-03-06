@@ -1,3 +1,11 @@
+'''Crie um programa que leia dois valores e mostre um menu na tela:
+[ 1 ] somar
+[ 2 ] multiplicar
+[ 3 ] maior
+[ 4 ] novos números
+[ 5 ] sair do programa
+Seu programa deverá realizar a operação solicitada em cada caso.'''
+
 cont = 1
 while cont > 0:
     num = int(input("Digite o primeiro numero: "))
@@ -13,11 +21,11 @@ while cont > 0:
             print(f"\033[0;32mSoma dos valores é: {num + num2}\033[m")
             print("-"*30)
             
-        if menu == 2:
+        elif menu == 2:
             print(f"\033[0;32mMultiplicação dos valores é: {num * num2}\033[m")
             print("-"*30)
             
-        if menu == 3:
+        elif menu == 3:
             if num > num2:
                 print(f"\033[0;32mO maior numero é: {num}\033[m")
                 print("-"*30)
@@ -30,13 +38,14 @@ while cont > 0:
                 print(f"\033[0;32mO numeros são iguais!\033[m")
                 print("-"*30)
                 
-        if menu == 4:
+        elif menu == 4:
             cont -= 1
         
-        if menu == 5:
+        elif menu == 5:
             print(f"\033[0;34mEncerrado!\033[m")
             cont -= 2
             
         else:
             print(f"\033[0;34mValor incorreto!\033[m")
+            print("-"*30)
             
