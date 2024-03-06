@@ -24,6 +24,4 @@ while cont <= limite:
         else:
             print("Encerrado!")
             cont += 1
-            
-
-            
+                  
