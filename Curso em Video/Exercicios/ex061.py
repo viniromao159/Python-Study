@@ -1,14 +1,11 @@
+# Refaça o DESAFIO 051, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura while.
+
 termo = int(input("Digite o primeiro termo: "))
 razao = int(input("Digite a razao: "))
-total = 0
 
 cont = 1
 while cont <= 10:
-    if cont == 1:
         print(termo)
-        total += termo
+        termo += razao
         cont += 1
     
-    total += razao
-    print(total)
-    cont += 1

@@ -1,31 +1,28 @@
+#  Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerrará quando ele disser que quer mostrar 0 termos.
+
 termo = int(input("Digite o primeiro termo: "))
 razao = int(input("Digite a razao: "))
-total = 0
 cont = 0
 
 while cont <= 10:
+    print(termo)
+    termo += razao
+    cont += 1
     
-    if cont == 0: #primeita interação adiciona e apresenta o valor do termo
-        print(termo)
-        total += termo
-        cont += 1
-    
-    else: 
-        total += razao
-        print(total)
-        cont += 1
-    
-    while cont == 10: #Na ultima interação
-        addtermo = int(input("Deseja mostrar mais termos? Digite a quantidade:"))
+    while cont == 10:   #Na ultima interação
+        print("-"*30)
+        addtermo = int(input("Deseja mostrar mais termos? Digite a quantidade: "))
         
-        if addtermo != 0: # Se for diferente de 0
+        if addtermo != 0:   # Se for diferente de 0
+            cont2 = 1  # Cria outra flag
+            print("-"*30)
             
-            cont2 = 1 # Cria outra flag
             while cont2 <= addtermo:
-                total += razao
-                print(total)
+                print(termo)
+                termo += razao
                 cont2 += 1
                 
         else:
             print("Encerrado!")
             cont += 1
+            
