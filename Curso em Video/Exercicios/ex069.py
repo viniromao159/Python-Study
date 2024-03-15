@@ -1,3 +1,9 @@
+''' Crie um programa que leia a idade e o sexo de várias pessoas. 
+ A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No final, mostre:
+A) quantas pessoas tem mais de 18 anos.
+B) quantos homens foram cadastrados.
+C) quantas mulheres tem menos de 20 anos.'''
+
 masc = fem_mais20 = mais18 =  0
 
 while True:
@@ -13,21 +19,16 @@ while True:
     if sexo == "m":
         masc += 1
     
-    cont = 0
-    while cont == 0:
-        continuar = input("Deseja continuar S/N: ").lower().strip()
-            
-        if "s" == continuar:
-            break
-        
-        elif "n" == continuar:
-            cont+=1
-        
-        else:
-            print("Valor incorreto!")
     
+    continuar = input("Deseja continuar S/N: ").lower().strip()
+    
+    while continuar not in ['s', 'n']:
+        print("Valor incorreto!")
+        
+        continuar = input("Deseja continuar S/N: ").lower().strip()
+        
     if "n" == continuar:
-        break    
+        break          
 
 print(f"Acima de 18 anos tem {mais18} pessoa!")
 print(f"Tem {masc} homens cadastrados!")
