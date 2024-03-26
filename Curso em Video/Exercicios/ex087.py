@@ -1,3 +1,8 @@
+'''Aprimore o desafio anterior, mostrando no final: 
+A) A soma de todos os valores pares digitados.
+B) A soma dos valores da terceira coluna.
+C) O maior valor da segunda linha.'''
+
 matriz = [[],[],[]]
 s_linha = []
 soma_t = pares = 0
@@ -20,6 +25,6 @@ for i in range(len(matriz)):
         if i == 1:
             s_linha.append(matriz[i][v])
 
-print(f"A soma dos valores pares é: {sum(pares)}")
+print(f"A soma dos valores pares é: {pares}")
 print(f"A soma dos valores da terceira coluna é: {soma_t}")
 print(f"O maior valor da segunda linha é: {max(s_linha)}")
