@@ -10,6 +10,9 @@ while True:
     if valor not in valores:
         valores.append(valor)
     
+    else:
+        print("Valor duplicado!")
+    
     continuar = input("Deseja continuar S/N: ").lower().strip()
     while continuar not in ['s', 'n']:
         print("Valor incorreto!")
