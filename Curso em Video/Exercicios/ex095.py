@@ -1,6 +1,5 @@
-'''jogadores = [{'nome': 'Vini', 'gols': [3, 1, 0, 2], 'total': 6},
-             {'nome': 'Vitor', 'gols': [0, 1, 0], 'total': 1},
-             {'nome': 'Bruno', 'gols': [1, 1, 1, 2, 3], 'total': 8}]'''
+'''Aprimore o desafio 93 para que ele funcione com vários jogadores, 
+incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.'''
 
 jogadores = []
 
@@ -40,3 +39,4 @@ while True:
         print(f"Levantamento de {jogadores[get]['nome']}: ")
         for gol in range(len(jogadores[get]['gols'])):
             print(f"Na {gol + 1}º partida fez {jogadores[get]['gols'][gol]} gols.")
+            
